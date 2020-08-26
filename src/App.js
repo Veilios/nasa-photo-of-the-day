@@ -1,6 +1,7 @@
 import React from "react";
-import PhotoCard from './components/PhotoCard'
-import Vote from './components/Vote'
+import PhotoCard from './components/PhotoCard';
+import Vote from './components/Vote';
+import DatePicker from './components/DatePicker'
 
 import "./App.css";
 
@@ -8,7 +9,10 @@ function App() {
   return (
     <div className="App">
       <PhotoCard />
-      <Vote /> 
+      <div className="com">
+        <DatePicker />
+        <Vote />
+      </div> 
     </div>
   );
 }

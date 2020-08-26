@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 
+
 const Vote = () => {
 
     const [upvote, setUpvote] = useState(0);
@@ -15,12 +16,12 @@ const Vote = () => {
     };
 
     return (
-        <div className="Voting">
-            <div className="upvote">
+        <div className="voting">
+            <div className="voter1">
                 <h3>Upvote: {upvote}</h3>
                 <button onClick={upVoting}>+</button>
             </div>
-            <div className="downvote">
+            <div className="voter2">
                 <h3>Downvote: {downvote}</h3>
                 <button onClick={downVoting}>-</button>
             </div>
