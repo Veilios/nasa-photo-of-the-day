@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { Spinner } from 'reactstrap';
+import PhotoInfo from './PhotoInfo';
 import axios from "axios";
 
 
@@ -7,7 +9,7 @@ export default function PhotoCard(){
 
     useEffect(() => {
         axios
-        .get(`https://api.nasa.gov/planetary/apod?api_key=xAujD2BeyWCSMUQqEKtZ0raan7NZyWL1gSkUeRIt&date=`)
+        .get(`https://api.nasa.gov/planetary/apod?api_key=4jBt7EYXvUEiUX7IVpZ94uan5XfDyq278NDwhdtG&date=2020-02-20`)
         .then((res) => {
             console.log("Res: ", res);
             setPhoto(res.data);
@@ -16,12 +18,14 @@ export default function PhotoCard(){
             console.log("Error Occurred: ", err);
         });
     }, []);
-    if (!photo.hdurl) return <h3>Loading...</h3>; return (
+    if (!photo.hdurl) return <h3>Loading...
+        <Spinner size="sm" color="primary" />{' '}
+        </h3>; return (
         <div className="photocard">
             <h2>{photo.title}</h2>
             <a href={photo.hdurl}><img src={photo.hdurl} alt="Nasa Photo of the Day"></img></a>
             <h4>{photo.date}</h4>
-            <p>{photo.explanation}</p>
+            <PhotoInfo explanation={photo.explanation}/>
         </div>
     )
 }
