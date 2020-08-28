@@ -55,6 +55,7 @@ body{
   height: 50rem;
   border-radius: 0.5rem;
   object-fit: fill;
+  margin-bottom: 3rem;
 }
 
 .photocard p {

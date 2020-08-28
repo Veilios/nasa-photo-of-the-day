@@ -9,6 +9,9 @@ const PhotoInfo = (props) => (
     <UncontrolledCollapse toggler="#toggler">
       <Card>
         <CardBody>
+          <h4>{props.date}</h4>
+        </CardBody>
+        <CardBody>
           {props.explanation}
         </CardBody>
       </Card>

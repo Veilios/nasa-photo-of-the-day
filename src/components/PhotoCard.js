@@ -24,8 +24,8 @@ export default function PhotoCard(){
         <div className="photocard">
             <h2>{photo.title}</h2>
             <a href={photo.hdurl}><img src={photo.hdurl} alt="Nasa Photo of the Day"></img></a>
-            <h4>{photo.date}</h4>
-            <PhotoInfo explanation={photo.explanation}/>
+            
+            <PhotoInfo date={photo.date} explanation={photo.explanation}/>
         </div>
     )
 }
