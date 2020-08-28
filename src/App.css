@@ -52,7 +52,7 @@ body{
 
 .photocard img{
   width: 60rem;
-  height: 35rem;
+  height: 50rem;
   border-radius: 0.5rem;
   object-fit: fill;
 }
