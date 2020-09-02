@@ -36,3 +36,61 @@
     transform: rotate(360deg);
   }
 }
+
+body{
+  background-image: url("./images/wallhaven-4ypjlg.jpg");
+}
+
+.com{
+  margin-left: 4rem;
+  margin-right: 4rem;
+  border-top: solid 0.2rem lightgrey;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.photocard img{
+  width: 60rem;
+  height: 50rem;
+  border-radius: 0.5rem;
+  object-fit: fill;
+  margin-bottom: 3rem;
+}
+
+.photocard p {
+  justify-content: center;
+  margin: 0rem 4rem;
+  padding: 1rem 2rem;
+  background-color: azure;
+  border-radius: 2rem;
+}
+
+.theDate {
+  padding-top: 1rem;
+}
+
+.voting {
+  display: flex;
+  margin-bottom: 6rem;
+  padding-top: 1rem;
+}
+
+.voter1 {
+  padding-right: 5rem;
+}
+
+.voter1 button {
+  color: blue;
+}
+
+.voter2 button {
+  color: red;
+}
+
+button {
+  border: none;
+  background-color: azure;
+  border-radius: 2px;
+  font-size: 1rem;
+}

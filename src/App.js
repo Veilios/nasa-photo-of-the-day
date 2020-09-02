@@ -1,13 +1,25 @@
 import React from "react";
+import PhotoCard from './components/PhotoCard';
+import Vote from './components/Vote';
+import DatePicker from './components/DatePicker'
+import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
+
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun <span role="img" aria-label='go!'>🚀</span>!
-      </p>
+      <Breadcrumb tag="nav" listTag="div">
+        <BreadcrumbItem tag="a" href="#">Home</BreadcrumbItem>
+        <BreadcrumbItem tag="a" href="https://www.nasa.gov/">Nasa</BreadcrumbItem>
+        <BreadcrumbItem tag="a" href="https://api.nasa.gov/">Data</BreadcrumbItem>
+        <BreadcrumbItem tag="a" href="https://lambdaschool.com/">Lambda</BreadcrumbItem>
+      </Breadcrumb>
+      <PhotoCard />
+      <div className="com">
+        <DatePicker />
+        <Vote />
+      </div> 
     </div>
   );
 }
